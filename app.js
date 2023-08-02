@@ -33,7 +33,7 @@ const product = require('./Routes/Product/Product');
 
 const addComment = require('./Routes/Comment/AddComment');
 const getComment = require('./Routes/Comment/GetCommentByProductId');
-
+const getCommentById =  require('./Routes/Product/GetProductById');
 
 
 app.use('/register', registerUser)
@@ -41,6 +41,7 @@ app.use('/login', Login);
 app.use('/updateUser', updateUser);
 app.use('/updatePassword', UpdatePassword);
 app.use('/product', product);
+app.use('/product', getCommentById);
 app.use('/comment',addComment);
 app.use('/comment',getComment);
 
