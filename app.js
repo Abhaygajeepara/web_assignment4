@@ -35,7 +35,12 @@ const addComment = require('./Routes/Comment/AddComment');
 const getComment = require('./Routes/Comment/GetCommentByProductId');
 const getCommentById =  require('./Routes/Product/GetProductById');
 
-
+const addCart  = require('./Routes/AddToCart/AddTocart');
+const getCartBy  = require('./Routes/AddToCart/GetCartByID');
+const deleteCartItem = require('./Routes/AddToCart/DeleteItemFromCart');
+const clearCart = require('./Routes/AddToCart/ClearCart');
+const addOrder = require('./Routes/Order/AddOrder');
+const getOrder = require('./Routes/Order/GetOrder');
 app.use('/register', registerUser)
 app.use('/login', Login);
 app.use('/updateUser', updateUser);
@@ -45,6 +50,19 @@ app.use('/product', getCommentById);
 app.use('/comment',addComment);
 app.use('/comment',getComment);
 
+
+
+
+// add
+app.use('/cart',addCart);
+app.use('/cart',getCartBy);
+
+
+app.use('/cart',deleteCartItem);
+app.use('/cart',clearCart);
+
+app.use('/order',addOrder);
+app.use('/order',getOrder);
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

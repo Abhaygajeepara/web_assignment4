@@ -50,7 +50,7 @@ router.post('/', upload.none(), async (req, res) => {
   } catch (error) {
     return res.status(500).json({
       [staticStrings.status_keyword]: false,
-      [staticStrings.message_keyword]: staticStrings.internal_server_error_keyword,
+      [staticStrings.message_keyword]: staticStrings.internal_server_error_keyword + ""+ error,
     });
   }
 });

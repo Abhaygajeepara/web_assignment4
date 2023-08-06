@@ -34,6 +34,22 @@ const staticStrings = {
   int_validation_keyword: 'Invalid data types for parameters',
   addComment_successful_keyword: 'Comment added successfully',
   addComment_fail_keyword: 'Failed to add comment',
+
+  quantityUpdate_message_keyword: 'Quantity updated successfully',
+  addToCartSuccessfully_message_keyword: 'Added to cart successfully',
+  addToCartFailed_message_keyword: 'Failed to add to cart',
+  successfulMessage_keyword: 'Cart item deleted successfully.',
+  dataNotfound_message_keyword: 'Cart item not found.',
+
+  order_successful_keyword: "Order created successfully",
+  order_failed_keyword: "Order creation failed",
+  fail_keyword: "Failed",
+  successfulMessage_keyword: "Successfully",
+
+
+   invalid_order_id_keyword :'Invalid order ID',
+ order_not_found_keyword :'Order not found',
+ length_not_same :'The length of items and qty arrays must be the same'
   };
   
   module.exports = staticStrings;
